@@ -14,13 +14,13 @@
 * **Requirements**: `pip install -r requirements.txt`
 
 ## Data
-The dataset used for training the classifiers was accessed from [Kaggle](https://www.kaggle.com/uciml/pima-indians-diabetes-database) but originally from the National Institute of Diabetes and Digestive and Kidney Diseases. The dataset contained information about 768 patients who were all female, 21 years or older, and of Pima Indian heritage.
+The dataset used for training the classifiers was accessed from [Kaggle](https://www.kaggle.com/uciml/pima-indians-diabetes-database) but originally from the National Institute of Diabetes and Digestive and Kidney Diseases. The dataset contains information about 768 patients who were all female, 21 years or older, and of Pima Indian heritage.
 * **Pregnancies** - number of pregnancies
 * **Glucose** - plasma glucose concentration after two hours in an oral glucose tolerance test
 * **BloodPressure** - diastolic blood pressure (mm Hg)
 * **SkinThickness** - triceps skin fold thickness (mm)
-* **Insulin** - two hour serum insulin ($\mu$U/mL)
-* **BMI** - body mass index (weight in kg/$(height in m)^{2}$)
+* **Insulin** - two hour serum insulin (muU/mL)
+* **BMI** - body mass index (weight in kg/(height in m)^2)
 * **DiabetesPedigreeFunction** - diabetes pedigree function
 * **Age** - age in years
 * **Outcome** - has diabetes or not (1 or 0, respectively)
