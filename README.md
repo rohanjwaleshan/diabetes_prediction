@@ -6,4 +6,4 @@
 * Used SMOTE to handle class imbalance (66% negative cases, 34% positive cases)
 * Created a pairplot with response as category to see if data was linealry separable
 * Created a pipeline with imblearn library for necessary preprocessing steps to be performed during GridSearchCV and RandomizedSearchCV
-* F-score and recall were primarily considered for evaluating models (test set was imbalanced)
+* F-score and recall were primarily considered for evaluating random forest and non-linear svm models (test set was imbalanced)
