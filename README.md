@@ -7,3 +7,8 @@
 * Created a pairplot with response as category to see if data was linealry separable
 * Created a pipeline with imblearn library for necessary preprocessing steps to be performed during GridSearchCV and RandomizedSearchCV
 * F-score and recall were primarily considered for evaluating random forest and non-linear svm models (test set was imbalanced)
+
+## Code
+* **Python Version**: 3.8.8
+* **Packages**: numpy, pandas, matplotlib, seaborn, sklearn, imblearn, pickle, flask
+* **Requirements**: `pip install -r requirements.txt`
