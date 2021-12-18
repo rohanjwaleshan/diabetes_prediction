@@ -12,3 +12,8 @@
 * **Python Version**: 3.8.8
 * **Packages**: numpy, pandas, matplotlib, seaborn, sklearn, imblearn, pickle, flask
 * **Requirements**: `pip install -r requirements.txt`
+
+## Data
+The dataset used for training the classifiers was accessed from [Kaggle](https://www.kaggle.com/uciml/pima-indians-diabetes-database) but originally from the National Institute of Diabetes and Digestive and Kidney Diseases. The dataset contained information about 768 patients who were all female, 21 years or older, and of Pima Indian heritage.
+* **Pregnancies** - number of pregnancies
+* **Glucose** - plasma glucose concentration after 2 hours in an oral glucose tolerance test
