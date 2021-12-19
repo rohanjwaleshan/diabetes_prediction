@@ -47,7 +47,7 @@ I checked whether the data was balanced before training the models (to prevent g
   <img src="images/class_imbalance.png"> 
 </p>
 
-Since the data was slightly imbalanced I decided to use SMOTE to balance training data before training models.
+Since the data was slightly imbalanced I decided to use SMOTE to balance training data before fitting models.
 
 I created a pairplot with the response (Outcome) as a label for each scatterplot to determine if data was linearly separable:
 
