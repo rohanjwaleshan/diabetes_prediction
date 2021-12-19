@@ -43,7 +43,9 @@ Section 3.7 of the following scientific [paper](https://www.sciencedirect.com/sc
 
 I checked whether the data was balanced before training the models (to prevent getting high accuracy just by predicting the majority class):
 
-![](images/class_imbalance.png)
+<p align="center">                                                   
+  <img src="images/class_imbalance.png"> 
+</p>
 
 Since the data was slightly imbalanced I decided to use SMOTE to balance training data before training models.
 
@@ -78,7 +80,10 @@ Results consist of the optimal hyperparameters used for both models, confusion m
 * max_features = 'auto'
 * n_estimators = 90
 
-![](images/rf_confusion_matrix.png) ![](images/rf_classification_report.png)
+<p align="center">                                                   
+  <img src="images/rf_confusion_matrix.png"> 
+  <img src="images/rf_classification_report.png"> 
+</p>
 
 ### Non-Linear SVM
 * kernel = 'rbf'
@@ -86,7 +91,10 @@ Results consist of the optimal hyperparameters used for both models, confusion m
 * degree = 2
 * C = 10
 
-![](images/svm_confusion_matrix.png) ![](images/svm_classification_report.png)
+<p align="center">                                                   
+  <img src="images/images/svm_confusion_matrix.png"> 
+  <img src="images/svm_classification_report.png"> 
+</p>
 
 ### The Better Model
 Based on the results for the best random forest model and best svm model the random forest model performs better. The random forest classified more true negatives and true positives, had a higher accuracy, and had higher precision, recall, and f1-score.
