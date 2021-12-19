@@ -92,7 +92,7 @@ Results consist of the optimal hyperparameters used for both models, confusion m
 * C = 10
 
 <p align="center">                                                   
-  <img src="images/images/svm_confusion_matrix.png"> 
+  <img src="images/svm_confusion_matrix.png"> 
   <img src="images/svm_classification_report.png"> 
 </p>
 
