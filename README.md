@@ -53,5 +53,7 @@ Since the data didn't seem to be linealry separable I proceeded with models that
 * Performed RandomizedSearchCV (due to complexity) with 5 fold cross validation (hyperparameters were kernel, C, degree, and gamma) to get best model based on recall
 * Evaluated the best estimated model (based on RandomizedSearchCV results) on unseen test set
 
+## Model Performance
+
 
 
