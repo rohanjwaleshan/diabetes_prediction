@@ -36,7 +36,10 @@ Performing descriptive statistics and constructing histograms for each variable 
 
 Section 3.7 of the following scientific [paper](https://www.sciencedirect.com/science/article/pii/S2352914816300016#s0050) explained how the zeros for these observations were actually recorded in place of missing values. Therefore I removed observations with very few "zeros" (Glucose, BloodPressure, BMI) and imputed the median (skewed distributions for SkinThickness and Insulin) for the rest before training the models.
 
-![](images/SkinThickness_histogram.png) ![](images/Insulin_histogram.png)
+<p align="center">                                                   
+  <img src="images/SkinThickness_histogram.png"> 
+  <img src="images/Insulin_histogram.png"> 
+</p>
 
 I checked whether the data was balanced before training the models (to prevent getting high accuracy just by predicting the majority class):
 
@@ -116,6 +119,7 @@ The dataset is constrained to women, 21 years or older, and of Pima Indian herit
 * [https://www.markdownguide.org/basic-syntax/#overview](https://www.markdownguide.org/basic-syntax/#overview)
 * [https://towardsdatascience.com/the-right-way-of-using-smote-with-cross-validation-92a8d09d00c7](https://towardsdatascience.com/the-right-way-of-using-smote-with-cross-validation-92a8d09d00c7)
 * [https://www.youtube.com/watch?v=iUf58DDXZlU](https://www.youtube.com/watch?v=iUf58DDXZlU)
+* [https://davidwells.io/snippets/how-to-align-images-in-markdown](https://davidwells.io/snippets/how-to-align-images-in-markdown)
 
 **Machine Learning Concepts**
 * [https://towardsdatascience.com/why-data-normalization-is-important-for-svm-classifiers-49ca0d8e4930](https://towardsdatascience.com/why-data-normalization-is-important-for-svm-classifiers-49ca0d8e4930)
