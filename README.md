@@ -44,7 +44,7 @@ Since the data was slightly imbalanced I decided to use SMOTE to balance trainin
 
 I created a pairplot with the response (Outcome) as a label for each scatterplot to determine if data was linearly separable:
 
-![](pairplot.png)
+![](images/pairplot.png)
 
 Since the data didn't seem to be linealry separable I proceeded with models that could transform non-linear spaces to linear spaces or didn't require data to be linearly separable.
 
