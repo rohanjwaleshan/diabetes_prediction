@@ -28,17 +28,21 @@ The dataset used for training the classifiers was accessed from [Kaggle](https:/
 ![](images/dataset.png)
 
 ## EDA
-Performing descriptive statistics constructing histograms for each variable in the dataset led to discovering variables that had values of zero where it wasn't logically possible. (Insert image of zeros here). Section 3.7 of the following scientific [paper](https://www.sciencedirect.com/science/article/pii/S2352914816300016#s0050) explained how the zeros for these observations were actually recorded in place of missing values. Therefore I removed observations with very few "zeros" (Glucose, BloodPressure, BMI) and imputed the median (skewed distributions for SkinThickness and Insulin) for the rest before training the models.
+Performing descriptive statistics and constructing histograms for each variable in the dataset led to discovering features that had values of zero where it wasn't logically possible.
+![](images/zeros_missing_values.png)
+
+Section 3.7 of the following scientific [paper](https://www.sciencedirect.com/science/article/pii/S2352914816300016#s0050) explained how the zeros for these observations were actually recorded in place of missing values. Therefore I removed observations with very few "zeros" (Glucose, BloodPressure, BMI) and imputed the median (skewed distributions for SkinThickness and Insulin) for the rest before training the models.
+![](images/SkinThickness_histogram.png) ![](images/Insulin_histogram.png)
 
 I checked whether the data was balanced before training the models (to prevent getting high accuracy just by predicting the majority class):
-(insert image of bar chart class imbalance)
+![](images/class_imbalance.png)
 
 Since the data was slightly imbalanced I decided to use SMOTE to balance training data before training models.
 
 I created a pairplot with the response (Outcome) as a label for each scatterplot to determine if data was linearly separable:
-(insert image of pairplot)
+![](pairplot.png)
 
-Since the data didn't seem to be linealry separable I proceeded with models that didn't require data to be linearly separable or transformed non-linear spaces to linear spaces.
+Since the data didn't seem to be linealry separable I proceeded with models that could transform non-linear spaces to linear spaces or didn't require data to be linearly separable.
 
 ## Model Development
 ### Random Forest
@@ -61,18 +65,25 @@ For the best random forest model and svm model (based on GridSearchCV and Random
 Results consist of the optimal hyperparameters used for both models, confusion matrices, and classification reports.
 
 ### Random Forest
+* max_depth = 2
+* max_features = 'auto'
+* n_estimators = 90
 
-(insert images)
+![](images/rf_confusion_matrix.png) ![](images/rf_classification_report.png)
 
 ### Non-Linear SVM
+* kernel = 'rbf'
+* gamma = 1
+* degree = 2
+* C = 10
 
-(insert images)
+![](images/svm_confusion_matrix.png) ![](images/svm_classification_report.png)
 
 ### The Better Model
 Based on the results for the best random forest model and best svm model the random forest model performs better. The random forest classified more true negatives and true positives, had a higher accuracy, and had higher precision, recall, and f1-score.
 
 ## Flask Web App
-After pickling the random forest model I used flask to create a web application that takes in a request with an array of values (features in dataset) that the user inputs and returns an outcome of whether patient has diabetes or not. I used the following [video tutorial](https://www.youtube.com/watch?v=i3RMlrx4ol4&t=2s) to help build the flask app.
+After pickling the random forest model I used flask to create a web application that takes in a request with an array of values (features in dataset) that the user inputs and returns an outcome of whether patient has diabetes or not. I used the following [video tutorial](https://www.youtube.com/watch?v=i3RMlrx4ol4&t=2s) to help build the flask app. The next step would be to deploy the flask app with a cloud platform.
 
 ## Limitations
 The dataset is constrained to women, 21 years or older, and of Pima Indian heritage therefore the models used in this project should only be used for individuals who meet these conditions for reliable results. The data also only contains information on patients who either have Type 2 diabetes or not and cannot be applied to patients with Type 1 diabetes.
