@@ -4,7 +4,7 @@
 * 768 patients (before removing observations from dataset)
 * Identified missing values that were recorded as zeros and dropped/imputed them
 * Used SMOTE to handle class imbalance (66% negative cases, 34% positive cases)
-* Created a pairplot with response as category to see if data was linealry separable
+* Created a pairplot with response as category to see if data was linearly separable
 * Created a pipeline with imblearn library for necessary preprocessing steps to be performed during GridSearchCV and RandomizedSearchCV
 * Recall was primarily considered for evaluating random forest and non-linear svm models (test set was imbalanced and minimizing false negatives was important)
 
