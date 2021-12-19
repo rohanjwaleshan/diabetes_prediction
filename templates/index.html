@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<body style = "background-color: lightblue;">
+
+		<center>
+		
+		<h1> Type 2 Diabetes Prediction </h1><br>
+
+		<form method="POST", action="{{url_for("homepage")}}">
+			<b>Pregnancies (total number): <input type="text", name='a', placeholder="enter value"> <br><br>
+			 Glucose (plasma glucose concentration): <input type="text", name='b', placeholder="enter value"> <br><br>
+			 Blood Pressure (diastolic in mm HG): <input type="text", name='c', placeholder="enter value"> <br><br>
+			 Skin Thickness (triceps skin fold in mm): <input type="text", name='d', placeholder="enter value "> <br><br>
+ 			 Insulin (2 hour serum mu U/ml): <input type="text", name='e', placeholder="enter value"> <br><br>
+ 			 BMI (weight in kg/(height in m)^2): <input type="text", name='f', placeholder="enter value"> <br><br>
+			 Diabetes Pedigree Function: <input type="text", name='g', placeholder="enter value"> <br><br>
+			 Age (in years): <input type="text", name='h', placeholder="enter value"> <br><br><br></b>
+			 <input type="submit", value='predict'>
+		</form>
+		
+		</center>
+
+	</body>
+</html>
