@@ -24,3 +24,19 @@ The dataset used for training the classifiers was accessed from [Kaggle](https:/
 * **DiabetesPedigreeFunction** - diabetes pedigree function
 * **Age** - age in years
 * **Outcome** - has diabetes or not (1 or 0, respectively)
+
+## EDA
+Performing descriptive statistics constructing histograms for each variable in the dataset led to discovering variables that had values of zero where it wasn't logically possible. (Insert image of zeros here). Section 3.7 of the following scientific [paper](https://www.sciencedirect.com/science/article/pii/S2352914816300016#s0050) explained how the zeros for these observations were actually recorded in place of missing values. Therefore I removed observations with very few "zeros" (Glucose, BloodPressure, BMI) and imputed the median (skewed distributions for SkinThickness and Insulin) for the rest before training the models.
+
+I checked whether the data was balanced before training the models (to prevent getting high accuracy just by predicting the majority class):
+(insert image of bar chart class imbalance)
+
+Since the data was slightly imbalanced I decided to use SMOTE to balance training data before training models.
+
+I created a pairplot with the response (Outcome) as a label for each scatterplot to determine if data was linearly separable:
+(insert image of pairplot)
+
+Since the data didn't seem to be linealry separable I proceeded with models that didn't require data to be linearly separable.
+
+## Model Development
+
