@@ -97,7 +97,7 @@ Results consist of the optimal hyperparameters used for both models, confusion m
 </p>
 
 ### The Better Model
-Based on the results for the best random forest model and best svm model the random forest model performs better. The random forest classified more true negatives and true positives, had a higher accuracy, and had higher precision, recall, and f1-score.
+Based on the results for the random forest model and svm model the random forest model performs better. The random forest classified more true negatives and true positives, had a higher accuracy, precision, recall, and f1-score.
 
 ## Flask Web App
 After pickling the random forest model I used flask to create a web application that takes in a request with an array of values (based on features in dataset) that the user inputs and returns an outcome of whether the patient has diabetes or not. I used the following [video tutorial](https://www.youtube.com/watch?v=i3RMlrx4ol4&t=2s) to help build the flask app. The next step would be to deploy the flask app with a cloud platform.
@@ -138,10 +138,4 @@ The dataset is constrained to women, 21 years or older, and of Pima Indian herit
 
 **Formatting Github Repo**
 * [https://www.youtube.com/watch?v=agHKuUoMwvY](https://www.youtube.com/watch?v=agHKuUoMwvY)
-
-
-
-
-
-
 
