@@ -103,7 +103,7 @@ Based on the results for the random forest model and svm model the random forest
 After pickling the random forest model I used flask to create a web application that takes in a request with an array of values (based on features in dataset) that the user inputs and returns an outcome of whether the patient has diabetes or not. I used the following [video tutorial](https://www.youtube.com/watch?v=i3RMlrx4ol4&t=2s) to help build the flask app. The next step would be to deploy the flask app with a cloud platform.
 
 ## Limitations
-The dataset is constrained to women, 21 years or older, and of Pima Indian heritage therefore the models used in this project should only be used for individuals who meet these conditions for reliable results. The data also only contains information on patients who either have Type 2 diabetes or not and cannot be applied to patients with Type 1 diabetes.
+The dataset is constrained to women, 21 years or older, and of Pima Indian heritage therefore the models used in this project should only be used for individuals who meet these conditions for reliable results. The data also only contains information on patients who either have Type 2 diabetes or not therefore the models shouldn't be applied to patients with Type 1 diabetes.
 
 ## Resources
 **Data**
