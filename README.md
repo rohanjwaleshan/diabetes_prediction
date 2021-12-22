@@ -34,7 +34,7 @@ Performing descriptive statistics and constructing histograms for each variable 
   <img src="images/zeros_missing_values.png">
 </p>
 
-Section 3.7 of the following scientific [paper](https://www.sciencedirect.com/science/article/pii/S2352914816300016#s0050) explained how the zeros for these observations were actually recorded in place of missing values. Therefore I removed observations with very few "zeros" (Glucose, BloodPressure, BMI) and imputed the median (skewed distributions for SkinThickness and Insulin) for the rest before training the models.
+Section 3.7 of the following scientific [paper](https://www.sciencedirect.com/science/article/pii/S2352914816300016#s0050) explained how the zeros for these observations were actually recorded in place of missing values. Therefore the observations with very few "zeros" (Glucose, BloodPressure, BMI) were removed and the median was imputed (skewed distributions for SkinThickness and Insulin) for the rest before training the models.
 
 <p align="center">                                                   
   <img src="images/SkinThickness_histogram.png"> 
